@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div{
+            border: 2px solid black;
+            margin:0 auto;
+            padding:10px 0;
+        }
+        /*label{
+            width: 230px;
+            display: inline-block;
+            text-align: right;
+        }*/
+        table,th,td{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align:left;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <center><h1>Student Registration Form</h1>
+        
+        <form action="" method="post">
+            <label for="nm">Name:</label>
+            <input type="text" name="full_name" id="nm" required>
+            <br><br>
+            <label for="contact">Phone No:</label>
+            <input type="tel" name="phone" id="contact" pattern="[0-9]{10}"required>
+            <br><br>
+            <label for="date">Date of Birth:</label>
+            <input type="date" name="dob" id="date" required>
+            <br><br>
+            <label for="addr">Address:</label>
+            <textarea id="addr" name="address" rows="5" cols="30" required></textarea>
+            <br><br>
+            <label for="gender" class="other">Gender:</label>
+		    <input type="radio" id="male" name="gender" value="male" required>
+		    <label for="male">Male</label>
+		    <input type="radio" id="female" name="gender" value="female">
+		    <label for="female">Female</label><br><br>
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="">Select city</option>
+                <option value="Bareilly">Bareilly</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Noida">Noida</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select><br><br>
+            <label for="hobbies">Hobbies:</label>
+		    <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+		    <label for="hobby1">Reading</label><br>
+		    <input type="checkbox" id="hobby2" name="hobbies" value="Music">
+		    <label for="hobby2">Music</label><br>
+		    <input type="checkbox" id="hobby3" name="hobbies" value="Sports">
+		    <label for="hobby3">Sports</label><br>
+            <input type="checkbox" id="hobby4" name="hobbies" value="Cooking">
+		    <label for="hobby4">Cooking</label><br>
+            <input type="checkbox" id="hobby5" name="hobbies" value="Gardening">
+		    <label for="hobby5">Gardening</label>
+            <br><br>
+                
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset">
+
+        </form>
+       <br><br>
+       <table>
+        <tr>
+            <th>S.No.</th>
+            <th>Name</th>
+            <th>Phone No.</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Interests</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mini</td>
+            <td>9698672345</td>
+            <td>Female</td>
+            <td>12/2/2001</td>
+            <td>
+                <ul style="list-style:none">
+                    <li>Reading</li>
+                    <li>Music</li>
+                    <li>Sports</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Raj</td>
+            <td>873456235</td>
+            <td>Male</td>
+            <td>2/12/2005</td>
+            <td>
+                <ul style="list-style:none">
+                    <li>Cooking</li>
+                    <li>Gardening</li>
+                </ul>
+            </td>
+        </tr>
+        
+        
+       </table>
+    
+    </center>
+</body>
+</html>
